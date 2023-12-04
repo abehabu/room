@@ -1,0 +1,684 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f1f1f1;
+    /* background-color: #99ee99; */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 2px solid black; */
+    height: 70px;
+}
+.header-title{
+margin-left: 10px;
+flex: 1;
+/* border: 2px solid blue; */
+}
+.header-nav{
+    flex: 2;
+    /* border: 2px solid brown; */
+}
+.header-nav ul{
+    display: flex;
+    flex-direction: row;
+        
+}
+.header-nav ul li{
+    margin-right: 50px;
+    margin-top: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+.header-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    transition: color 0.3s ease-in-out;
+}
+.header-nav ul li a:hover{
+    color: #ff69b4;
+}
+.main-container{
+    background-image: url("./images/living-room1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* border: 2px solid red; */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+    height: 535px;
+    padding-left: 20px;
+    
+}
+.button button{
+    position: relative;
+    background-color: #000000;
+    color: #f1f1f1;
+    font-weight: bolder;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* .button button::before{
+    content: "";
+    position: absolute;
+    top: 100;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #005599;
+    transform: translateY(-100%);
+    transition: transform 0.3s;
+}
+.button button:hover::before{
+    transform: translateY(0);
+} */
+.more{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+.interior-excellence{
+    text-align: center;
+}
+.project-showcase{
+    text-align: center;
+}
+.residential-expertise{
+    text-align: center;
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.contact-txt{
+    margin: 10px;
+    margin-left: 50px;
+    padding: 10px;
+    width: 500px;
+    /* border: 2px solid red; */
+}
+.contact-txt button{
+    position: relative;
+    background-color: #000000;
+    color: #f1f1f1;
+    font-weight: bolder;
+    width: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.contact-img{
+/* border: 2px solid black; */
+margin-right: 50px;
+margin-top: 50px;
+}
+.contact-img img{
+    width: 500px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+#about{
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    /* border-bottom: 2px solid black; */
+}
+.abtln{
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(141deg, rgb(4, 73, 73) 0%, rgb(52, 30, 73) 40%, rgb(55, 54, 54) 90%);
+}
+.about-text{
+    /* margin: 10px; */
+    margin-top: 5px;
+    margin-right: 100px;
+    margin-left: 20px;
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* border: 2px solid black; */
+    border-radius: 50px;
+    background-color: rgb(251, 247, 242);
+}
+.about-text-card1{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+    position: relative;
+}
+.about-text-card1 img{
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+} 
+.about-text-card1 h3{
+   position: absolute;
+   top: 50px;
+   left: 120px; 
+}
+.about-text-card1 p{
+    position: absolute;
+    top: 150px;
+    text-align: justify;
+    padding-right: 10px;
+}
+.about-text-card2{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; 
+}
+.about-text-card2 img{
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+} 
+.about-text-card2 h3{
+   position: absolute;
+   top: 50px;
+   left: 120px; 
+}
+.about-text-card2 p{
+    position: absolute;
+    top: 150px;
+    text-align: justify;
+    padding-right: 10px;
+} 
+.about-text-card3{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;  
+}
+.about-text-card3 img{
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+} 
+.about-text-card3 h3{
+   position: absolute;
+   top: 50px;
+   left: 120px; 
+}
+.about-text-card3 p{
+    position: absolute;
+    top: 150px;
+    text-align: justify;
+    padding-right: 10px;
+}
+#services{
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.serv{
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(141deg, rgb(4, 73, 73) 0%, rgb(52, 30, 73) 40%, rgb(55, 54, 54) 90%);
+}
+.services-txt{
+    margin: 10px;
+    padding: 10px;
+}
+#project{
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.pro{
+    height: 10px;
+    width: 100%;
+    background: linear-gradient(141deg, rgb(4, 73, 73) 0%, rgb(52, 30, 73) 40%, rgb(55, 54, 54) 90%);
+}
+.project-card{
+    display: flex;
+
+    width: 100%;
+    height: auto;
+}
+.card1{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card1 img{
+    width: 300px;
+}
+.card1 p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.card2{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card2 img{
+    width: 300px;
+}
+.card2 p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.card3{
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card3 img{
+    width: 300px;
+}
+.card3 p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.contact-us{
+    margin: 10px;
+    padding: 10px;
+    background-color: #000000;
+    color: #f1f1f1;
+    border-radius: 20px;
+    text-align: center;
+}
+.contact-us button{
+    padding: 5px;
+    margin: 10px;
+    background-color: #ff69b4;
+    color: whitesmoke;
+    width: 100px;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.contact-us h1{
+    margin-bottom: 10px;
+    font-weight: bolder;
+}
+.extra{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+}
+.socials{
+    /* border: 2px solid; */
+    position: relative;
+}
+#img1{
+    width: 30px;
+    border-radius: 50%;
+    margin-top: 10px;
+    position: absolute;
+    left: 10px;
+    }
+#img2{
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 10px;
+    position: absolute;
+    left: 70px;
+    }
+#img3{
+    width: 30px;
+    border-radius:50%;
+    margin-top: 10px;
+    position: absolute;
+    left: 150px;
+    }
+    .pages ul li{
+        list-style-type: none;
+    }
+    .servicesxtr ul li{
+        list-style-type: none;
+    }
+    footer{
+        width: 100%;
+        /* border: 2px solid black; */
+        text-align: center;
+    }
+    @media screen and (max-width:600px) {
+        /* body{
+            background-color:black;
+            color:#f1f1f1;
+        } */
+        .container{
+            width: 100%;
+        }
+        .header{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            /* border: 2px solid black; */
+            height: 70px;
+            width: 100%;
+        }
+        .header-title{
+        margin-left: 10px;
+        flex: 1;
+        /* border: 2px solid blue; */
+        }
+        .header-title h1{
+            font-size: 15px;
+        }
+        .header-nav{
+            flex: 2;
+            /* border: 2px solid brown; */
+        }
+        .header-nav ul{
+            display: flex;
+            flex-direction: row;
+                
+        }
+        .header-nav ul li{
+            margin-right: 5px;
+            margin-left: 5px;
+            margin-top: 1px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .header-nav ul li a{
+            text-decoration: none;
+            font-size: 10px;
+            color: black;
+            font-weight: bolder;
+            transition: color 0.3s ease-in-out;
+        }
+        .more{
+            flex-direction: column;
+        }
+        .more p, h2{
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        .contact{
+            position: relative;
+            width: 100%;
+        }
+        .contact-txt{
+            position: absolute;
+            top: 35px;
+            width: 200px;
+            height: 50px;
+            font-weight: 900;
+            color: #ff69b4;
+            align-items: start;
+            justify-content: flex-start;
+        }
+        .contact-txt button{
+            position: absolute;
+            left: 150px;
+            top: 170px;
+            height: 30px;
+            width: 120px;
+            font-size: 10px;
+            margin: 0;
+            padding: 0;
+        }
+        .contact-img img{
+            width: 340px;
+            z-index: -1;
+            opacity: 1;
+        }
+        #about h1{
+            font-size: 20px;
+        }
+        .abtln{
+            height: 5px;
+            margin-top: 5px;
+        }
+        .about-text{
+            flex-direction: column;
+            height: 600px;
+        }
+        .about-text-card1{
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .about-text-card1 img{
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            left: 20px;
+        } 
+        .about-text-card1 h3{
+           position: absolute;
+           top: 27px;
+           left: 90px;
+           font-size: 15px; 
+        }
+        .about-text-card1 p{
+            position: absolute;
+            top: 80px;
+            text-align: justify;
+            padding-right: 10px;
+            font-size: 12px;
+        }
+        .about-text-card2{
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative; 
+            margin-bottom: 20px;
+        }
+        .about-text-card2 img{
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            left: 20px;
+        } 
+        .about-text-card2 h3{
+           position: absolute;
+           top: 30px;
+           left: 90px;
+           font-size: 15px;
+        }
+        .about-text-card2 p{
+            position: absolute;
+            top: 80px;
+            text-align: justify;
+            padding-right: 10px;
+            font-size: 12px;
+        } 
+        .about-text-card3{
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;  
+        }
+        .about-text-card3 img{
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            left: 20px;
+        } 
+        .about-text-card3 h3{
+           position: absolute;
+           top: 30px;
+           left: 90px;
+           font-size: 15px; 
+        }
+        .about-text-card3 p{
+            position: absolute;
+            top: 90px;
+            text-align: justify;
+            padding-right: 10px;
+            font-size: 12px;
+        }
+
+        #services h1{
+            font-size: 20px;
+        }
+        .serv{
+            height: 5px;
+            margin-top: 5px;
+        }
+        .services-txt{
+            font-size: 15;
+            margin-top: -25px;
+            text-align: justify;
+        }
+        #project h1{
+            font-size: 20px;
+        }
+        .pro{
+            height: 5px;
+            margin-top: 5px;
+        }
+        .project-card{
+            flex-direction: column;
+        }
+        .card1{
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        .card1 img{
+            width: 200px;
+        }
+        .card1 p{
+            font-size: 15px;
+        }
+        .card2{
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        .card2 img{
+            width: 200px;
+        }
+        .card2 p{
+            font-size: 15px;
+        }
+        .card3{
+            width: 200px;
+            margin-bottom: 10px;
+        }
+        .card3 img{
+            width: 200px;
+        }
+        .card3 p{
+            font-size: 15px;
+        }
+        .contact-us{
+            width: 215px;
+            margin-left: 55px;
+        }
+        .contact-us h1{
+            font-size: 15;
+        }
+        .contact-us p{
+            font-size: 15px;
+        }
+        .extra{
+            flex-direction: column;
+        }
+        .socials{
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .socials h1{
+            font-size: 15px;
+        }
+        #img1{
+            position: absolute;
+            width: 20px;
+       }
+        #img2{
+            position: absolute;
+            width: 30px;
+            top: 50px;
+       }
+        #img3{
+            position: absolute;
+            width: 20px;
+       }
+       .pages{
+        margin-bottom: 10px;
+       }
+       .servicextra{
+        margin-bottom: 10px;
+       }
+    }
+
+
+
